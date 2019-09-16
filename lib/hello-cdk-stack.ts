@@ -1,9 +1,13 @@
-import cdk = require('@aws-cdk/core');
+import cdk = require("@aws-cdk/core")
+import { Bucket } from "@aws-cdk/aws-s3"
 
 export class HelloCdkStack extends cdk.Stack {
-  constructor(scope: cdk.Construct, id: string, props?: cdk.StackProps) {
+  constructor(scope: cdk.App, id: string, props?: cdk.StackProps) {
     super(scope, id, props);
 
-    // The code that defines your stack goes here
+    // Create S3 Bucket
+    new Bucket(this, id, {
+      bucketName: "bucketName",
+    })
   }
 }
