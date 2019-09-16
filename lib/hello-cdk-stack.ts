@@ -7,7 +7,7 @@ export class HelloCdkStack extends cdk.Stack {
 
     // Create S3 Bucket
     new Bucket(this, id, {
-      bucketName: "bucketName",
+      bucketName: "ishizuka-bucket",
     })
   }
 }
