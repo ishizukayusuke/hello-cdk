@@ -1,5 +1,9 @@
 # awscdk
 
+ちょっと触ってみた(s3立てるだけ)。  
+
+[元記事](https://qiita.com/is_ryo/items/8e6787a457a84447461a)
+
 ## 前提条件
 
 ```
@@ -36,4 +40,7 @@ $ cdk synth
 
 // 差分を確認
 $ cdk diff
+
+// 破壊
+$ cdk destroy
 ```
